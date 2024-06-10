@@ -13,6 +13,9 @@ Početni ekran aplikacije Math FunLand osmišljen je da pruži korisnicima toplo
 2. Informativni tekst: prikazuje osnovne informacije o igri.
 3. Dugme za pokretanje igre: pritiskom na dugme otvara se glavni prozor igre, započinje timer i igra počinje.
 
+![image](https://github.com/SarahHodzic/Math-FunLand/assets/82335709/498fde25-dd2f-4fc0-88d1-e8a24e9d53bf)
+
+
 ## Opis ekrana sa igrom
 
 Ekran sa igrom u aplikaciji Math FunLand osmišljen je tako da korisnicima omogući rješavanje zadatka sabiranja u interaktivnom okruženju. Ekran je prilagođen kako za portretni, tako i za pejzažni način prikaza, te sadrži različite funkcionalnosti koje pomažu korisnicima da se fokusiraju na rješavanje zadataka.
