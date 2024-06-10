@@ -16,7 +16,7 @@ Početni ekran aplikacije Math FunLand osmišljen je da pruži korisnicima toplo
 ![image](https://github.com/SarahHodzic/Math-FunLand/assets/82335709/498fde25-dd2f-4fc0-88d1-e8a24e9d53bf)
 
 
-## Opis ekrana sa igrom
+### Opis ekrana sa igrom
 
 Ekran sa igrom u aplikaciji Math FunLand osmišljen je tako da korisnicima omogući rješavanje zadatka sabiranja u interaktivnom okruženju. Ekran je prilagođen kako za portretni, tako i za pejzažni način prikaza, te sadrži različite funkcionalnosti koje pomažu korisnicima da se fokusiraju na rješavanje zadataka.
 
@@ -27,6 +27,17 @@ Ekran sa igrom u aplikaciji Math FunLand osmišljen je tako da korisnicima omogu
 4. Polje za unos odgovora: omogućava korisnicima da unesu svoj odgovor.
 5. Dugme za potvrdu: omogućava korisnicima da potvrde svoj odgovor.
 6. Rezultat: prikazuje trenutni rezultat korisnika.
+
+Kada korisnik pritisne dugme za početak igre koji se nalazi na landing page-u odmah započinje timer od 10 sekundi za koje igrač mora unijeti odgovor u polje za unos odgovora. Ukoliko je odgovor tačan pojavljuje se dijalog sa porukom „Tačno“ , ali takođe i dugme čijim klikom se bira naredno pitanje. Ukoliko je odgovor netačan izaći će dijalog sa adekvatnom porukom opcijom da se prekine igra ili započne nova. Ako igrač ne unese odgovor u datom vremenu dobija dijalog sa porukom. Također je uključeno i dugme za dijeljenje rezultata igre drugim aplikacijama. Također i svaki put kada igrač odgovori tačno broj bodova se povećava za 1.
+
+Aplikacija posjeduje pejzažni i portretni prikaz ekrana
+
+Kada je korisnik u portret mode-u svi elementi ekrana su poredani jedan ispod drugom po redoslijedu kojim su navedeni iznad, dok u pejzažnom načinu prikaza timer, polje za unos odgovora i rezultat su u jednom redu, zadatak je iznad njih a dugme za potvrdu odgovora ispod
+
+![image](https://github.com/SarahHodzic/Math-FunLand/assets/82335709/7d2b6387-a26c-4129-9b1e-1f32299380af)
+![image](https://github.com/SarahHodzic/Math-FunLand/assets/82335709/f8895a5b-8ebc-4279-86e4-2c937ed3d025)
+![image](https://github.com/SarahHodzic/Math-FunLand/assets/82335709/cd236d75-acd1-49ee-b54c-b97463319516)
+![image](https://github.com/SarahHodzic/Math-FunLand/assets/82335709/0ff09a9b-3cf3-48f7-bf38-ef9dbb82b779)
 
 ## Opis arhitekture aplikacije
 
