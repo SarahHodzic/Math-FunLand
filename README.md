@@ -91,8 +91,11 @@ LandingPage je početni ekran aplikacije koji pruža dobrodošlicu korisniku i n
 GameViewModel je ViewModel klasa koja upravlja stanjem igre i poslovnom logikom. Njene funkcionalnosti uključuju:
 
 •	Upravljanje stanjem igre: Drži trenutne brojeve za zadatak, operaciju (sabiranje ili oduzimanje), preostalo vrijeme, rezultat, i korisnikov unos.
+
 •	Generiranje zadataka: Metoda generatingNumbersAndOperations generira nasumične brojeve i operaciju za novi zadatak.
+
 •	Upravljanje tajmerom: Metode startTimer, stopTimer, i logika unutar startGame i onNextClick upravljaju odbrojavanjem vremena za svaki zadatak.
+
 •	Provjera odgovora: Metoda checkAnswer provjerava da li je korisnikov unos tačan ili netačan i ažurira stanje igre prema tome.
 
 ### GameUiState
