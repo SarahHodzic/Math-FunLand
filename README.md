@@ -9,7 +9,7 @@ Math FunLand je edukativna Android aplikacija osmišljena za učenike prvih razr
 Početni ekran aplikacije Math FunLand osmišljen je da pruži korisnicima toplo dobrodošlicu i osnovne informacije o igri, uz jednostavne i intuitivne kontrole za početak igre.
 
 #### Elementi početnog ekrana:
-1. **Tekst dobrodošlice**: prikazuje poruku dobrodošlice korisnicima aplikacije.
+1. Tekst dobrodošlice: prikazuje poruku dobrodošlice korisnicima aplikacije.
 2. Informativni tekst: prikazuje osnovne informacije o igri.
 3. Dugme za pokretanje igre: pritiskom na dugme otvara se glavni prozor igre, započinje timer i igra počinje.
 
@@ -79,4 +79,50 @@ TopAppBar je funkcija koja prikazuje traku na vrhu ekrana sa navigacijskim dugme
 CorrectAnsDialog je funkcija koja prikazuje dijalog kada korisnik tačno odgovori na zadatak. Omogućava korisniku da pređe na sljedeći zadatak.
 
 ### EndGameDialog
-EndGameDialog je funkcija koja prikazuje dijalog kada korisnik da netačan odgov
+EndGameDialog je funkcija koja prikazuje dijalog kada korisnik da netačan odgovor ili istekne vrijeme. Omogućava korisniku da ponovo započne igru ili zatvori aplikaciju.
+
+### MathGame
+MathGame je funkcija koja postavlja navigaciju unutar aplikacije, omogućujući prebacivanje između LandingPage i GameScreen.
+
+### LandingPage
+LandingPage je početni ekran aplikacije koji pruža dobrodošlicu korisniku i nudi osnovne informacije o igri. Također sadrži dugme za početak igre koje pokreće igru i prebacuje korisnika na GameScreen.
+
+### GameViewModel
+GameViewModel je ViewModel klasa koja upravlja stanjem igre i poslovnom logikom. Njene funkcionalnosti uključuju:
+
+•	Upravljanje stanjem igre: Drži trenutne brojeve za zadatak, operaciju (sabiranje ili oduzimanje), preostalo vrijeme, rezultat, i korisnikov unos.
+•	Generiranje zadataka: Metoda generatingNumbersAndOperations generira nasumične brojeve i operaciju za novi zadatak.
+•	Upravljanje tajmerom: Metode startTimer, stopTimer, i logika unutar startGame i onNextClick upravljaju odbrojavanjem vremena za svaki zadatak.
+•	Provjera odgovora: Metoda checkAnswer provjerava da li je korisnikov unos tačan ili netačan i ažurira stanje igre prema tome.
+
+### GameUiState
+GameUiState je klasa koja predstavlja stanje korisničkog interfejsa. Sadrži podatke kao što su trenutni brojevi za zadatak, operacija, preostalo vrijeme, rezultat, i poruke o tačnim ili netačnim odgovorima.
+
+### Dijeljenje rezultata putem sharing intent-a
+Korisniku se omogućava da dijeli svoj rezultat igre putem različitih aplikacija koje podržavaju dijeljenje tekstualnog sadržaja, kao što su aplikacije za poruke, društvene mreže i email aplikacije. Ovo se postiže korištenjem Intent.ACTION_SEND akcije zajedno sa potrebnim podacima i tipom sadržaja.
+
+### Glavni tok igranja
+
+1.	Početak igre: Korisnik započinje igru sa LandingPage i prebacuje se na GameScreen.
+2.	Prikaz zadataka i tajmera: GameScreen prikazuje nasumično generisani zadatak i odbrojavanje vremena.
+3.	Unos i provjera odgovora: Korisnik unosi odgovor, a GameViewModel provjerava tačnost unosa.
+4.	Prikaz rezultata: Na osnovu tačnosti odgovora, prikazuje se odgovarajući dijalog (CorrectAnsDialog ili EndGameDialog).
+5.	Ponovno pokretanje igre: Korisnik može ponovno pokrenuti igru ili zatvoriti aplikaciju.
+
+## Opis opštih koncepata Android frameworka
+
+Opšti koncepti Android frameworka obuhvataju osnovne principe i komponente koje čine strukturu Android operativnog sistema i omogućavaju razvoj mobilnih aplikacija.
+
+•  Activities (Aktivnosti): Koriste se za predstavljanje korisničkog interfejsa na ekranu i za interakciju sa korisnikom. U projektu su korištene aktivnosti poput GameScreen i LandingPage kako bi se prikazale odgovarajuće stranice aplikacije.
+•  ViewModel: ViewModel je arhitekturni obrazac koji se koristi za čuvanje i upravljanje podacima koji su povezani sa UI komponentama. GameViewModel u projektu čuva logiku i stanje igre.
+•  Layouts (Rasporedi): Layouti definišu strukturu i izgled korisničkog interfejsa, uključujući poziciju i stil elemenata kao što su dugmad, polja za unos teksta, i slično.
+•  Intents:  koriste se za pokretanje komponenti aplikacije, slanje i primanje podataka između komponenti, kao i za pokretanje aktivnosti iz različitih dijelova aplikacije. U projektu se koristi Intent za dijeljenje rezultata igre putem drugih aplikacija.
+•  Navigation (Navigacija): Navigacija se koristi za upravljanje prelaskom između različitih ekrana ili dijelova aplikacije. U projektu se koristi NavHost sa definisanim rutama (composable) kako bi se omogućilo navigiranje između početne stranice (LandingPage) i stranice igre (GameScreen).
+•	Localization: Proces prilagođavanja aplikacije različitim jezicima, regionalnim podešavanjima i kulturnim kontekstima kako bi se korisnicima pružilo lokalizovano iskustvo. Uključuje prevođenje tekstova, prilagođavanje formata datuma, vremena i valuta, kao i prilagođavanje drugih aspekata aplikacije prema jezičkim preferencama korisnika.
+•	Životni ciklus (Lifecycle): Odnosi se na seriju stanja koje aktivnost ili fragment može prolaziti tokom svog postojanja, od stvaranja do uništenja. Ovo je ključni koncept jer omogućava android programerima da upravljaju ponašanjem aplikacije u različitim situacijama, kao što su promjene konfiguracije uređaja, prelazak između aktivnosti i fragmenta, kao i promjene u životnom ciklusu samog Android sistema.
+
+
+
+
+
+
