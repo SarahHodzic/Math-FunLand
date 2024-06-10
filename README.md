@@ -9,7 +9,7 @@ Math FunLand je edukativna Android aplikacija osmišljena za učenike prvih razr
 Početni ekran aplikacije Math FunLand osmišljen je da pruži korisnicima toplo dobrodošlicu i osnovne informacije o igri, uz jednostavne i intuitivne kontrole za početak igre.
 
 #### Elementi početnog ekrana:
-1. Tekst dobrodošlice: prikazuje poruku dobrodošlice korisnicima aplikacije.
+1. **Tekst dobrodošlice**: prikazuje poruku dobrodošlice korisnicima aplikacije.
 2. Informativni tekst: prikazuje osnovne informacije o igri.
 3. Dugme za pokretanje igre: pritiskom na dugme otvara se glavni prozor igre, započinje timer i igra počinje.
 
