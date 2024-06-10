@@ -113,13 +113,19 @@ Korisniku se omogućava da dijeli svoj rezultat igre putem različitih aplikacij
 
 Opšti koncepti Android frameworka obuhvataju osnovne principe i komponente koje čine strukturu Android operativnog sistema i omogućavaju razvoj mobilnih aplikacija.
 
-•  Activities (Aktivnosti): Koriste se za predstavljanje korisničkog interfejsa na ekranu i za interakciju sa korisnikom. U projektu su korištene aktivnosti poput GameScreen i LandingPage kako bi se prikazale odgovarajuće stranice aplikacije.
-•  ViewModel: ViewModel je arhitekturni obrazac koji se koristi za čuvanje i upravljanje podacima koji su povezani sa UI komponentama. GameViewModel u projektu čuva logiku i stanje igre.
-•  Layouts (Rasporedi): Layouti definišu strukturu i izgled korisničkog interfejsa, uključujući poziciju i stil elemenata kao što su dugmad, polja za unos teksta, i slično.
-•  Intents:  koriste se za pokretanje komponenti aplikacije, slanje i primanje podataka između komponenti, kao i za pokretanje aktivnosti iz različitih dijelova aplikacije. U projektu se koristi Intent za dijeljenje rezultata igre putem drugih aplikacija.
-•  Navigation (Navigacija): Navigacija se koristi za upravljanje prelaskom između različitih ekrana ili dijelova aplikacije. U projektu se koristi NavHost sa definisanim rutama (composable) kako bi se omogućilo navigiranje između početne stranice (LandingPage) i stranice igre (GameScreen).
-•	Localization: Proces prilagođavanja aplikacije različitim jezicima, regionalnim podešavanjima i kulturnim kontekstima kako bi se korisnicima pružilo lokalizovano iskustvo. Uključuje prevođenje tekstova, prilagođavanje formata datuma, vremena i valuta, kao i prilagođavanje drugih aspekata aplikacije prema jezičkim preferencama korisnika.
-•	Životni ciklus (Lifecycle): Odnosi se na seriju stanja koje aktivnost ili fragment može prolaziti tokom svog postojanja, od stvaranja do uništenja. Ovo je ključni koncept jer omogućava android programerima da upravljaju ponašanjem aplikacije u različitim situacijama, kao što su promjene konfiguracije uređaja, prelazak između aktivnosti i fragmenta, kao i promjene u životnom ciklusu samog Android sistema.
+•  **Activities (Aktivnosti)**: Koriste se za predstavljanje korisničkog interfejsa na ekranu i za interakciju sa korisnikom. U projektu su korištene aktivnosti poput GameScreen i LandingPage kako bi se prikazale odgovarajuće stranice aplikacije.
+
+•  **ViewModel**: ViewModel je arhitekturni obrazac koji se koristi za čuvanje i upravljanje podacima koji su povezani sa UI komponentama. GameViewModel u projektu čuva logiku i stanje igre.
+
+•  **Layouts (Rasporedi)**: Layouti definišu strukturu i izgled korisničkog interfejsa, uključujući poziciju i stil elemenata kao što su dugmad, polja za unos teksta, i slično.
+
+•  **Intents**:  koriste se za pokretanje komponenti aplikacije, slanje i primanje podataka između komponenti, kao i za pokretanje aktivnosti iz različitih dijelova aplikacije. U projektu se koristi Intent za dijeljenje rezultata igre putem drugih aplikacija.
+
+•  **Navigation (Navigacija)**: Navigacija se koristi za upravljanje prelaskom između različitih ekrana ili dijelova aplikacije. U projektu se koristi NavHost sa definisanim rutama (composable) kako bi se omogućilo navigiranje između početne stranice (LandingPage) i stranice igre (GameScreen).
+
+•	**Localization**: Proces prilagođavanja aplikacije različitim jezicima, regionalnim podešavanjima i kulturnim kontekstima kako bi se korisnicima pružilo lokalizovano iskustvo. Uključuje prevođenje tekstova, prilagođavanje formata datuma, vremena i valuta, kao i prilagođavanje drugih aspekata aplikacije prema jezičkim preferencama korisnika.
+
+•	**Životni ciklus (Lifecycle)**: Odnosi se na seriju stanja koje aktivnost ili fragment može prolaziti tokom svog postojanja, od stvaranja do uništenja. Ovo je ključni koncept jer omogućava android programerima da upravljaju ponašanjem aplikacije u različitim situacijama, kao što su promjene konfiguracije uređaja, prelazak između aktivnosti i fragmenta, kao i promjene u životnom ciklusu samog Android sistema.
 
 
 
