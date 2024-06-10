@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Projekat_1_Aplikacija_za_sabiranje_i_oduzimanje</string>
+    <string name="score">Score</string>
+    <string name="game_name">Math FunLand</string>
+    <string name="you_scored">"I scored: %d points in the Math FunLand game!"</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="restart_game">Restart Game</string>
+    <string name="submit">Submit</string>
+    <string name="timer">Timer: %d s</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play</string>
+    <string name="correct">Correct!</string>
+    <string name="next_question">Next</string>
+    <string name="score1">Score: %d</string>
+    <string name="welcome">Welcome to the Math Game!</string>
+    <string name="info">Test your addition and subtraction skills with this fun and interactive game. Try to get as many correct answers as possible within the time limit!</string>
+    <string name="back_button">Back</string>
+    <string name="start_game">Start Game</string>
+    <string name="share">Share</string>
+    <string name="message_incorrect">Incorrect! Try again :(</string>
+    <string name="message_timeout">You ran out of time :(</string>
+</resources>

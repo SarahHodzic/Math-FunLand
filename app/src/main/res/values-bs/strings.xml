@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="score">Rezultat</string>
+    <string name="game_name">Math FunLand</string>
+    <string name="you_scored">"Osvojio sam: %d bodova u Math FunLand igrici"</string>
+    <string name="your_answer">Tvoj odgovor</string>
+    <string name="restart_game">Nova igra</string>
+    <string name="submit">Potrvdi</string>
+    <string name="timer">Tajmer: %d s</string>
+    <string name="exit">Izađi</string>
+    <string name="play_again">Igraj</string>
+    <string name="correct">Tačno!</string>
+    <string name="next_question">Iduće pitanje</string>
+    <string name="score1">Rezultat: %d</string>
+    <string name="welcome">Dobro došli u matematičku igru!</string>
+    <string name="info">Testirajte svoje vještine sabiranja i oduzimanja uz ovu zabavnu i interaktivnu igru. Pokušajte da dobijete što više tačnih odgovora u roku!</string>
+    <string name="back_button">Dugme nazad</string>
+    <string name="start_game">Počni igru</string>
+    <string name="share">Dijeli</string>
+    <string name="message_incorrect">Netačno! Pokušaj opet :(</string>
+    <string name="message_timeout">Vrijeme je isteklo :(</string>
+</resources>

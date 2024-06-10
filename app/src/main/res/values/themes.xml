@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Projekat_1_Aplikacija_za_sabiranje_i_oduzimanje" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
